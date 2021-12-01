@@ -1,4 +1,4 @@
-/* Binary Search Tree implementation in C  with following functions */
+/* Binary Search Tree implementation in C with basic operations*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,9 +33,9 @@ int main(void)
 	while (choice != 11)
 	{
 		printf("-----------------------------------------------------------------------------");
-		printf("\nChoose for Queue between: \n");
+		printf("\nChoose for Binary Search Tree between: \n");
 		printf("(1) Insert\n(2) Search\n(3) Delete a Node from the BST\n(4) No. of Nodes\n(5) Height/Max Depth\n(6) Minimum value");
-		printf("\n(7) Maximum Value\n(8) In Order Traverse\n(9)Pre Order Traverse\n(10) Post Order Traverse\n(11) Exit\n\n");
+		printf("\n(7) Maximum Value\n(8) In Order Traverse\n(9) Pre Order Traverse\n(10) Post Order Traverse\n(11) Exit\n\n");
 		printf("Enter your Choice: ");
 		scanf("%d", &choice);
 		printf("\n");
