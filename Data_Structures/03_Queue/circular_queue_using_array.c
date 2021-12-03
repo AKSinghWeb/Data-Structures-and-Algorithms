@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define MAX 20
+#define MAX 5
 
 int myArray[MAX];
 int front = -1;
@@ -59,6 +59,7 @@ void enqueue(int value)
     if (isFull())
     {
         printf("Error : Cannot insert as Queue is full \n");
+        return;
     }
 
     else if (isEmpty())
@@ -76,18 +77,18 @@ void enqueue(int value)
 
 void dequeue()
 {
-    printf("Dequeuing from the queue ...\n");
-
     if (isEmpty())
     {
-        printf("Error : Cannot Dequeue as Queue is full \n");
+        printf("Error : Cannot Dequeue as Queue is empty \n");
     }
     else if (front == rear)
-    {
+    {   
+        printf("Dequeued %d from the queue\n",myArray[front]);
         front = rear = -1;
     }
     else
     {
+        printf("Dequeued %d from the queue\n",myArray[front]);
         front = (front + 1) % MAX;
     }
 }
